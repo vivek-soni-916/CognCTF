@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="jpg.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+<!--==============================================================================================================================-->
+
+  <script> 
+    var modal = document.getElementById('id01'); 
+    window.onclick = function(event) { 
+        if (event.target == modal) { 
+            modal.style.display = "none"; 
+        } 
+    } 
+</script> 
+
+
+<!--==============================================================================================================================-->
+  </head>
+  
+<body class="body_login_page">
+
+    <div class="div-1">
+      
+      <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+
+        <a class="navbar-brand" href="#login_page.html" style="color: burlywood;"><img src="jpg.png" alt="image is not supported" style="width: 35px;height: 35px;border-radius: 50%;">CogzCTF</a>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#target_toggling_div" aria-controls="target_toggling_div" aria-expanded="false" aria-lable="Toggle_navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+            <div class="collapse navbar-collapse" id="target_toggling_div">
+
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" id="home_page"href="#home_page">Home </a>
+                      </li>
+                      <li class="piller">
+                        |
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html">About Us </a>
+                      </li>
+                      <li class="piller">
+                         |
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contact_Us.html">Contact Us  </a>
+                      </li>
+                      <li class="piller">
+                          |
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Resources.html">Resources</a>
+                      </li>
+                  </nav> 
+                </ul>
+                
+       
+            </div>       
+      </nav>
+
+           
+  </div>
+
+  <div class="row" id="myrow">
+
+    <div class="col-md-5">       
+      <img class="image" src="1.jpg" alt="opps! image can't be loaded">
+    </div>
+
+    <div class="login col-md-7">
+ 
+        <button class = "btn btn-default" type="button" name="button"  onclick="document.getElementById('id01').style.display='block'">Login</button>
+     
+              <div id="id01" class="modal"><!-------------------------  [ id: id01] -------------------------->
+
+                <form action="/action_page.php" class="modal-content animate">
+
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                      <img src="Avtar.jfif" alt="Avatar" class="avatar"> 
+                    </div> 
+                    
+                    <div class="container" style="background-color: black;"> 
+                      <label><b>Username</b></label> 
+                      <input type="text" placeholder="Enter Username" name="uname" required> 
+              
+                      <label style="text-align: left;"><b>Password</b></label> 
+                      <input type="password" placeholder="Enter Password" name="psw" required> 
+              
+                      <button type="submit" >Login</button> 
+                      <label>
+                      <input type="checkbox" checked="checked"> Remember me 
+                      </label>
+                    </div> 
+
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+
+                </form> 
+              </div>
+    </div>
+  </div> 
+  <marquee behavior="" direction="left" style="color: #3EFF15; font-size: 30px;">Registraion of CogzCTF will be started soon (Cognizance Event), so we have kept registration process as well as login feature off. Till then refer and learn RESOURCES.</marquee>
+</body>
+</html>
