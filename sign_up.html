@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="sign_up_style.css">
+        
+    </head>
+    
+    <body>
+        <form action="/action_page.php"> 
+            <button id="home_button" name="arrow_to_home" onclick="location.href='login_page.html';">Home </button>
+
+        <div id="sign_up_box">
+            
+            <div class="left_box">
+                <h1>Sign Up</h1>
+                <input type="text" name="username" id="Username" placeholder="Enter Username" required/>
+                <input type="email" name="email" id="Email" placeholder="Enter Email" required/>
+                <input type="password" name="password" id="Password" placeholder="Enter Password" required/>
+                <input type="password" name="again_password" id="Repassword" placeholder="Confirm Password" required/>
+                <br>
+                <input type="submit" name="submit" id="Submit" />
+            </div>
+
+            <div class="right_box">
+                <span class="sign_up_with">Sign Up with</span>  
+                <button class="social facebook">Sign up with facebook</button>
+                <button class="social google">Sign up with Google</button>
+
+            </div>
+
+            <div class="or">OR</div>
+
+        </div>
+        </form>  
+    </body>
+</html>
